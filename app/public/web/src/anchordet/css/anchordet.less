@@ -1,0 +1,380 @@
+// 雪碧图
+.sprite {
+    background-image: url(../images/anchordet-sprite.png);
+    background-repeat: no-repeat;
+}
+// 左边内容块
+.anchordet-main-left {
+	width: 800px;
+	margin-left: 4px;
+	margin-top: 38px;
+
+	// 用户信息框
+	.user-info-wk {
+		width: 100%;
+		height: 360px;
+		border: 1px solid #e5e5e5;
+		background-position: 0 0;
+	}
+
+	// 用户头像 名称
+	figure {
+		width: 260px;
+		height: 200px;
+
+		> img {
+			width: 116px;
+			height: 116px;
+			margin-top: 19px;
+			margin-left: 70px;
+			border: 2px solid #fff;
+			border-radius: 50%;
+		}
+		.info-name {
+			clear: both;
+			margin: 0 10px;
+			height: 109px;
+		}
+		.nickname {
+			clear: both;
+			height: 44px;
+			margin: 0 10px;
+			color: #fff;
+			font-size: 20px;
+			line-height: 40px;
+		}
+		.info-id-wk {
+			width: 100%;
+			height: 22px;
+			font-size: 0;
+			line-height: 1;
+
+			img {
+				width: 22px;
+				height: 22px;
+				margin: 0 10px;
+				vertical-align: middle;
+			}
+			.info-id {
+				height: 22px;
+				color: #fff;
+				font-size: 16px;
+				line-height: 22px;
+				vertical-align: middle;
+			}
+		}
+
+		
+		.id {
+			clear: both;
+			color: #fff;
+			font-size: 16px;
+			line-height: 32px;
+			
+			img{
+				width:20px;
+				height:20px;
+				border:0px;	
+				border-radius: 5px;
+			}
+		}
+	}
+
+	// 用户详细信息
+	.user-info {
+		width: 520px;
+		height: 248px;
+	}
+	.user-table-wk {
+		display: table;
+
+		width: 100%;
+		height: 100%;
+	}
+	.uset-table-nk {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.item {
+		width: 100%;
+		max-height: 54px;
+
+		.ico {
+			width: 27px;
+			height: 27px;
+		}
+		.ico-sex {
+			background-position: 0 -442px;
+		}
+		.ico-age {
+			background-position: 0 -469px;
+		}
+		.ico-area {
+			background-position: 0 -496px;
+		}
+		.ico-authent {
+			background-position: 0 -388px;
+		}
+		.ico-autograph {
+			background-position: 0 -415px;
+		}
+		.label-cont {
+			width: 493px;
+			color: #fff;
+			font-size: 16px;
+			line-height: 27px;
+		}
+	}
+	.user-fist {
+		// margin-top: 30px;
+	}
+	.user-authent {
+		margin-top: 20px;
+	}
+	.user-autograph {
+		margin-top: 20px;
+	}
+	.user-sex,
+	.user-age,
+	.user-area {
+		width: 150px;
+		height: 27px;
+		
+		.label-cont {
+			width: 123px;
+			height: 27px;
+			color: #fff;
+			font-size: 16px;
+			line-height: 27px;
+		}
+	}
+	// .item {
+	// 	height: 41px;
+	// 	color: #fff;
+	// 	font-size: 16px;
+	// 	line-height: 41px;
+	// 	text-indent: 28px;
+
+	// 	&:nth-child(1) {
+	// 		margin-top: 11px;
+	// 		background-position: 0 -361px;
+	// 	}
+	// 	&:nth-child(2) {
+	// 		margin-top: 3px;
+	// 		background-position: 0 -402px;
+	// 	}
+	// 	&:nth-child(3) {
+	// 		margin-top: 6px;
+	// 		background-position: 0 -443px;
+	// 	}
+	// 	&:nth-child(4) {
+	// 		margin-top: 2px;
+	// 		background-position: 0 -484px;
+	// 	}
+	// }
+
+	// // 性别 / 年龄 / 城市 / 家乡
+	// .user-sex,
+	// .user-age,
+	// .user-area,
+	// .user-home {
+	// 	width: 127px;
+	// 	height: 100%;
+	// 	line-height: 41px;
+	// }
+	// .user-age {
+	// 	margin-left: 6px;
+	// 	text-indent: 24px;
+	// }
+	// .user-area {
+	// 	margin-left: 15px;
+	// 	text-indent: 22px;
+	// }
+	// .user-home {
+	// 	margin-left: 10px;
+	// 	text-indent: 26px;
+	// }
+
+	// 数据排行
+	.data-list {
+		clear: both;
+		height: 111px;
+		border-top: 1px solid #50bfff;
+
+		li {
+			width: 199.25px;
+			height: 100%;
+			border-left: 1px solid #50bfff;
+
+			&:first-child {
+				border-left: 0;
+			}
+
+			em {
+				height: 37px;
+				margin: 27px 5px 0 5px;
+				color: #00a7ff;
+				font-size: 28px;
+				line-height: 37px;	
+			}
+			.label {
+				height: 27px;
+				color: #5e5e5e;
+				font-size: 16px;
+				line-height: 27px;
+			}
+		}
+	}
+
+	// 数据表
+	.table {
+		margin-top: 40px;
+		margin-bottom: 37px;
+	}
+	.table-head {
+		height: 60px;
+		background: url(../images/anchordet-table-head-bg.jpg) no-repeat;
+		background-size: 100% 100%;
+
+		li {
+			height: 33px;
+			margin-top: 13px;
+			padding: 0 20px;
+			color: #d6eefc;
+			font-size: 14px;
+			line-height: 33px;
+			cursor: pointer;
+
+			&:hover {
+				color: #fff;
+			}
+
+			// 装饰线
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 1px;
+				height: 10px;
+				margin-top: -5px;
+				background: #abe1fa;
+			}
+			&:first-child:before {
+				content: none;
+			}
+		}
+		li.sel {
+			color: #fff;
+		}
+	}
+	.table-tbody {
+		height: 452px;
+		border-left: 1px solid #e5e5e5;
+		border-right: 1px solid #e5e5e5;
+		border-bottom: 1px solid #e5e5e5;
+		background: #fafbfc;
+	}
+}
+
+// 右边内容块
+.anchordet-main-right {
+	width: 312px;
+	margin-top: 38px;
+	margin-right: 4px;
+
+	// 主播信息
+	.user-info {
+		width: 100%;
+		border: 1px solid #e5e5e5;
+
+		img {
+			width: 100%;
+		}
+	}
+	.img-get-false,
+	.img-get-false-not {
+		height: 262px;
+		background: #aadbfb;
+
+		figure {
+			height: 100%;
+		}
+
+		img {
+			width: 116px;
+			height: 116px;
+			margin-top: 71px;
+			margin-left: 96px;
+			border: 2px solid #fff;
+			border-radius: 50%;
+		}
+	}
+	
+	.user-head {
+		top: 0;
+		left: 0;
+		width: 100%;
+		border-top: 3px solid #ff3f71;
+
+		p {
+			width: 160px;
+			height: 29px;
+			top: 0;
+			left: 50%;
+			margin-left: -80px;
+			color: #fff;
+			font-size: 14px;
+			line-height: 29px;
+			background: #ff3f71;
+		}
+	}
+
+	.img-get-false-not {
+		.user-head {
+			border-top: 3px solid #888;
+
+			p {
+				background: #888;
+			}
+		}
+	}
+	
+	
+	
+	figcaption {
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 38px;
+		background: rgba(0,0,0,0.4);
+	}
+	.user-name,
+	.user-watchpeople {
+		height: 38px;
+		color: #fff;
+		font-size: 14px;
+		line-height: 38px;
+	}
+	.user-name {
+		width: 170px;
+		margin-left: 18px;
+	}
+	.user-watchpeople {
+		width: 80px;
+		margin-right: 12px;
+	}
+
+	// 联系主播
+	.btn-contact {
+		width: 308px;
+		height: 50px;
+		margin-top: 56px;
+		margin-left: 1px;
+		color: #00344f;
+		font-size: 18px;
+		line-height: 50px;
+		background-position: 0 -525px;
+	}
+}

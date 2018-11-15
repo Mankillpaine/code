@@ -1,0 +1,460 @@
+// 雪碧图
+.sprite {
+    background-image: url(../images/index-sprite.png);
+    background-repeat: no-repeat;
+}
+
+// 展示部分样式
+.index-show {
+    height: 716px;
+    background: #323131 url(../images/show-bg.png) no-repeat center;
+
+    .ly-1210 {
+        height: 100%;
+    }
+
+    // 时间 标题 指数
+    .time,
+    .title,
+    .index {
+        width: 100%;
+        margin-left: 62px;
+    }
+    .time {
+        height: 31px;
+        margin-top: 26px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 31px;
+    }
+    .title {
+        height: 40px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 40px;
+
+        // .color {
+        //     color: #38bbff;
+        // }
+    }
+    .index {
+        height: 44px;
+        color: #38bbff;
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    // 地图
+    .map {
+        top: 139px;
+        left: 17px;
+        width: 688px;
+        height: 530px;
+
+        // 盖住南海诸岛问题
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 120px;
+            height: 100px;
+            background: transparent;
+        }
+    }
+
+    // 地图容器
+    .map-main {
+        width: 100%;
+        height: 100%;
+    }
+
+    // 用户信息
+    .map-user {
+        top: 0;
+        left: -100%;
+        z-index: 1;
+    }
+    .user-default,
+    .user-hover {
+        opacity: 0;
+        transition: opacity .6s;
+    }
+    .user-default {
+        min-width: 257px;
+
+        p {
+            height: 28px;
+            color: #38bbff;
+            font-size: 14px;
+            line-height: 28px;
+        }
+        figure {
+            width: 60px;
+            height: 60px;
+            border: 2px solid #38bbff;
+            border-radius: 50%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        // 棍子
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -13px;
+            left: 50%;
+            display: block;
+            width: 2px;
+            height: 18px;
+            margin-left: -1px;
+            background: #38bbff;
+        }
+        // 圆圈
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -21px;
+            left: 50%;
+            display: block;
+            width: 8px;
+            height: 8px;
+            margin-left: -4px;
+            border-radius: 50%;
+            background: #38bbff;
+        }
+    }
+    .user-hover {
+        min-width: 257px;
+        height: 98px;
+        color: #fff;
+        background: url(../images/map-user-border-left.png) no-repeat left,
+                    url(../images/map-user-border-right.png) no-repeat right,
+                    rgba(0, 0, 0, 0.38);
+
+        // 头像
+        figure {
+            width: 60px;
+            height: 60px;
+            margin-top: 17px;
+            margin-left: 7px;
+            margin-right: 7px;
+            border: 2px solid #38bbff;
+            border-radius: 50%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        // 右边数据块
+        .ly-block {
+            width: 169px;
+            margin-top: 17px;
+            margin-right: 10px;
+            font-size: 14px;
+            
+            .name {
+                max-width: 112px;
+                height: 100%;
+                line-height: 22px;
+            }
+            p {
+                height: 22px;
+                line-height: 22px;
+            }
+            .color {
+                color: #38bbff;
+            }
+            .people-size {
+                text-indent: 14px;
+                background-position: 0 -620px;
+            }
+        }
+
+        // 棍子
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            display: block;
+            width: 2px;
+            height: 22px;
+            margin-left: -1px;
+            background: #38bbff;
+        }
+        // 圆圈
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -26px;
+            left: 50%;
+            display: block;
+            width: 8px;
+            height: 8px;
+            margin-left: -4px;
+            border-radius: 50%;
+            background: #38bbff;
+        }
+    }
+
+    // 榜单
+    .listsingle {
+        top: 40px;
+        right: 5px;
+        width: 480px;
+        height: 319px;
+        border-top: 4px solid #38bbff;
+        background: #fff;
+
+        // 榜单头部
+        .list-head {
+            border-bottom: 1px solid #38bbff;
+
+            time {
+                width: 80px;
+                height: 25px;
+                margin-left: 200px;
+                color: #fff;
+                font-size: 14px;
+                line-height: 25px;
+                background: #38bbff;
+            }
+            .em {
+                width: 220px;
+                height: 33px;
+                font-size: 18px;
+
+                &:nth-of-type(2) {
+                    width: 260px;
+                }
+            }
+        }
+        .ly-mar {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        b {
+            width: 30px;
+            height: 30px;
+            margin-left: 3px;
+            color: #6b6b6b;
+            font-size: 14px;
+            line-height: 30px;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+            margin-left: 2px;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+        p {
+            width: 74px;
+            height: 30px;
+            color: #5e5e5e;
+            font-size: 13px;
+            line-height: 30px;
+        }
+        strong {
+            width: 56px;
+            height: 30px;
+            margin-left: 6px;
+            color: #38bbff;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        // 主播榜单样式
+        // .list-left,
+        // .list-right {
+        //     width: 50%;
+        // }
+        .list-left {
+            width: 220px;
+
+            li:nth-child(2n) {
+                background: #eff6f6;
+            }
+        }
+        .list-right {
+            width: 260px;
+
+            li:nth-child(2n + 1) {
+                background: #eff6f6;
+            }
+            p {
+                width: 108px;
+            }
+            strong {
+                width: 64px
+            }
+        }
+
+        .list-foot {
+            .em {
+                width: 220px;
+                height: 30px;
+                color: white;
+                font-size: 14px;
+                line-height: 30px;
+                background: #38bbff;
+
+                &:nth-of-type(2) {
+                    width: 260px;
+                }
+            }
+        }
+    }
+
+    // 轮播器
+    .carousel {
+        top: 386px;
+        right: 5px;
+        width: 480px;
+        height: 290px;
+    }
+}
+
+// 头部指数
+.index-tbindex {
+    height: 320px;
+
+    .ly-1210 {
+        height: 100%;
+        background-position: 0 0;
+    }
+
+    p {
+        padding: 0 132px;
+        padding-top: 200px;
+        color: #5e5e5e;
+        font-size: 16px;
+        line-height: 175%;
+    }
+}
+
+// 数据
+.index-data {
+    height: 262px;
+    background: #f4f4f4;
+
+    .ly-1210 {
+        height: 100%;
+
+        .ly-block:last-child .number {
+            background-position: -140px -440px;
+        }
+    }
+
+    .ly-block {
+        width: 50%;
+        height: 100%;
+    }
+
+    .number {
+        width: 140px;
+        height: 140px;
+        margin-top: 40px;
+        margin-left: 232px;
+        color: #3f4cfb;
+        font-size: 32px;
+        line-height: 140px;
+        background-position: 0 -440px;
+    }
+
+    .label {
+        width: 100%;
+        margin-top: 30px;
+        color: #5e5e5e;
+        font-size: 16px;
+    }
+}
+
+// 新闻列表
+.index-newlist {
+    .ly-1210 {
+        padding: 0 4px;
+    }
+
+    // 列表头部
+    .list-head {
+        height: 100px;
+
+        b {
+            color: #38bbff;
+            font-size: 24px;
+            line-height: 100px;
+        }
+
+        .button {
+            width: 78px;
+            height: 24px;
+            margin-top: 36px;
+            color: #38bbff;
+            font-size: 16px;
+            line-height: 24px;
+            border: 1px solid #38bbff;
+            border-radius: 12px;
+        }
+    }
+
+    // 列表内容
+    .list-main {
+        width: 1248px;
+        margin-left: -15px;
+
+        li {
+            width: 580px;
+            // height: 300px;
+            margin-bottom: 38px;
+            margin-left: 19px;
+            margin-right: 19px;
+            border: 1px solid #e5e5e5;
+            background: #fff;
+        }
+
+        .img {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            background: #e7e7e7;
+
+            img {
+                width: 100%;
+            }
+        }
+        .title {
+            width: 542px;
+            height: 32px;
+            margin-top: 7px;
+            margin-left: 19px;
+            font-size: 17px;
+            line-height: 32px;
+        }
+        .author, time {
+            height: 25px;
+            margin-top: 5px;
+            margin-bottom: 7px;
+            line-height: 25px;
+        }
+        .author {
+            width: 318px;
+            margin-left: 19px;
+            color: #5e5e5e;
+            font-size: 14px;
+        }
+        time {
+            width: 143px;
+            padding-right: 19px;
+            color: #aaa;
+            font-size: 14px;
+        }
+    }
+}

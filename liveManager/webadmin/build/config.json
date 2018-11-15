@@ -1,0 +1,19 @@
+{
+    "path": {
+        "entry": "./../src",
+        "outDev": "./../test",
+        "outPro": "./../static"
+    },
+    "server": {
+        "host": "127.0.0.1",
+        "port": 5001
+    },
+    "domain": "http://www.baidu.com",
+    "module": ["common"],
+    "maxLimit": 1024,
+    "autoOpen": false,
+    "api_path": {
+        "dev": "http://1.itoubu.com/liveManager",
+        "pro": "http://www.baidu.com"
+    }
+}

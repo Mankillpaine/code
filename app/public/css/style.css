@@ -1,0 +1,38 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend{ margin: 0;	padding: 0;	border: 0;	outline: 0;	font-weight: inherit;	font-style: inherit;	font-family: inherit;	font-size:100%;	text-align: left;	vertical-align: baseline;}img {border:none;}table {border-collapse: collapse; border-spacing: 0;}q:before, q:after, blockquote:before, blockquote:after {content: "";}
+/* 基础样式----------------------------------------*/
+body{	text-align:center;	}
+body, p, td, th, li{	font-family: Arial, Helvetica, sans-serif;	}
+
+/*--- 链接样式 ---*/a{	text-decoration:none;	color:#666666;}a:hover, a:active{	text-decoration:none;}
+a h2{	cursor:pointer;}
+ul{	list-style-type:none;}
+ol{	margin-left:25px;}
+blockquote	{margin: 0 0 18px 18px; font-style: italic;}strong	{font-weight:bold;}em	{font-style:italic;}
+html{
+    font-size:625%;
+}
+body{
+    font-size:0.16rem;
+}
+input {
+    border: 0;
+}
+input{outline:none;}
+input[type="submit"]{
+    outline:none;
+}
+img{
+    /*width: 100%;*/
+}
+.content-wk{
+    max-width:7.5rem;
+    margin:0 auto;
+}
+div{
+    display: block;
+}
+body{
+    max-width:7.5rem;
+    margin:0 auto;
+    position:relative;
+}

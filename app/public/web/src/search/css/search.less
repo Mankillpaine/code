@@ -1,0 +1,375 @@
+// 雪碧图
+.sprite {
+    background-image: url(../images/search-sprite.png);
+    background-repeat: no-repeat;
+}
+// 搜索框
+.search-search {
+	height: 100px;
+	background: #f4f4f4;
+
+	input {
+		width: 660px;
+		height: 46px;
+		margin-top: 25px;
+		margin-left: 224px;
+		color: #5e5e5e;
+		font-size: 18px;
+		text-indent: 17px;
+		line-height: 46px;
+		background: #fff;
+		border-radius: 6px 0 0 6px;
+	}
+	.btn-search {
+		width: 104px;
+		height: 46px;
+		margin-top: 25px;
+		color: #fff;
+		font-size: 18px;
+		line-height: 46px;
+		background: #38bbff;
+		border-radius: 0 6px 6px 0;
+	}
+}
+
+// 筛选
+.search-screen {
+	// 筛选
+	.screen {
+		width: 1146px;
+		margin: 40px auto 38px auto;
+		background: #f4f4f4;
+		border-top: 1px solid #e5e5e5;
+		border-left: 1px solid #e5e5e5;
+		border-right: 1px solid #e5e5e5;
+
+		> li {
+			border-bottom: 1px solid #e5e5e5;
+		}
+		em {
+			width: 69px;
+			height: 40px;
+			color: #5e5e5e;
+			font-size: 14px;
+			line-height: 40px;
+			text-indent: 20px;
+		}
+	}
+
+	// 筛选列表
+	.sel-list {
+		width: 995px;
+		height: 40px;
+		// transition: all .6s;
+	}
+
+	// 选择项
+	.list-item {
+		padding: 0 15px;
+		font-size: 14px;
+		line-height: 40px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		a {
+			color: #5e5e5e;
+		}
+		a.sel {
+			color: #38bbff;
+		}
+	}
+
+	// 其他
+	.btn-other {
+		width: 82px;
+		color: #5e5e5e;
+		font-size: 14px;
+		line-height: 40px;
+	}
+
+	// 三角形
+	.ico-triangle {
+		width: 0;
+		height: 0;
+		font-size: 0;
+		border-top: 7px solid #5e5e5e;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		transition: transform .3s;
+	}
+}
+
+// 搜索内容
+.search-content {
+	.table {
+		width: 1146px;
+		margin: 40px auto 98px auto;
+		border: 1px solid #e5e5e5;
+	}
+	
+	// 表格标题
+	.table-head  {
+		height: 60px;
+		border-bottom: 1px solid #e5e5e5;
+
+		.label {
+			padding-left: 19px;
+			color: #5e5e5e;
+			font-size: 18px;
+			line-height: 60px;
+
+			small {
+				padding-left: 17px;
+				color: #aaa;
+				font-size: 16px;
+			}
+		}
+		
+		// tab框
+		.tab-wk {
+			height: 26px;
+			margin-top: 17px;
+		}
+		b {
+			color: #5e5e5e;
+			font-size: 16px;
+			line-height: 26px;
+		}
+		li {
+			padding: 0 19px 0 20px;
+			color: #aaa;
+			font-size: 16px;
+			line-height: 26px;
+			cursor: pointer;
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 9px;
+				width: 1px;
+				height: 10px;
+				background: #aeaeae;
+			}
+			&:first-child:before {
+				content: none;
+			}
+		}
+		li.sel {
+			color: #38bbff;
+		}
+	}
+
+	// 表格单元
+	.table-th,
+	.table-td {
+		&:nth-child(1) {
+			width: 180px;
+		}
+		&:nth-child(2) {
+			width: 129px;
+		}
+		&:nth-child(3) {
+			width: 111px;
+		}
+		&:nth-child(4) {
+			width: 125px;
+		}
+		&:nth-child(5) {
+			width: 118px;
+		}
+		&:nth-child(6) {
+			width: 123px;
+		}
+		&:nth-child(7) {
+			width: 77px;
+		}
+		&:nth-child(8) {
+			width: 83px;
+		}
+		&:nth-child(9) {
+			width: 88px;
+		}
+		&:nth-child(10) {
+			width: 112px;
+		}
+	}
+	// 单元标题
+	.table-th {
+		height: 40px;
+		color: #999;
+		font-size: 16px;
+		line-height: 40px;
+		text-align: center;
+		border-bottom: 2px solid #35b3f5;
+
+		.ico {
+			width: 12px;
+			height: 12px;
+			margin-left: 1px;
+			background-position: 0 0;
+
+			&:hover .ly-alert,
+			&:hover .decorate{
+				display: block;
+			}
+		}
+		// 弹出说明框
+		.ly-alert {
+			top: 26px;
+			left: 50%;
+			width: 240px;
+			margin-left: -120px;
+			border: 2px solid #38bcff;
+			background: #fff;
+
+			p {
+				margin: 22px 20px;
+				color: #5e5e5e;
+				font-size: 14px;
+				line-height: 24px;
+				text-align: left;
+			}
+		}
+		// 装饰三角形
+		.decorate {
+			top: 14px;
+			left: 50%;
+			width: 19px;
+			height: 14px;
+			margin-left: -9.5px;
+			background-position: 0 -117px;
+		}
+	}
+	// 单元内容
+	.table-tbody {
+		.table-tr {
+			height: 77px;
+			background: #f2f3f5;
+
+			&:nth-child(2n) {
+				background: #fff;
+			}
+			.table-td {
+				// 用户信息
+				img {
+					width: 52px;
+					height: 52px;
+					margin-top: 12px;
+					margin-left: 12px;
+					margin-right: 10px;
+					border-radius: 50%;
+				}
+				figcaption {
+					width: 104px;
+				}
+				.user-name {
+					width: 100%;
+					height: 30px;
+					margin-top: 25px;
+					color: #5e5e5e;
+					font-size: 16px;
+					line-height: 30px;
+					transition: all 0.5s;
+				}
+				.user-id {
+					width: 100%;
+					height: 25px;
+					color: #a3a4a5;
+					font-size: 14px;
+					line-height: 25px;
+					white-space: nowrap;
+					opacity: 0;
+					transition: all 0.5s;
+				}
+
+				// 平台 / 综合指数 / 主播热度 / 城市 / 性别
+				.user-terrace,
+				.user-comprehensive,
+				.user-heat,
+				.user-area,
+				.user-sex {
+					color: #5e5e5e;
+					font-size: 16px;
+					line-height: 77px;
+					text-align: center;
+				}
+
+				// 主播收入 / 粉丝总数
+				.user-income {
+					width: 100%;
+					height: 25px;
+					margin-top: 27px;
+					color: #5e5e5e;
+					font-size: 16px;
+					line-height: 25px;
+					transition: all 0.5s;
+				}
+				.user-total {
+					width: 100%;
+					height: 26px;
+					color: #a3a4a5;
+					font-size: 16px;
+					line-height: 26px;
+					opacity: 0;
+					transition: all 0.5s;
+				}
+
+				// 趋势
+				.ico {
+					width: 35px;
+					height: 35px;
+					margin-top: 21px;
+					margin-left: 26.5px;
+				}
+				.ico-new {
+					background-position: 0 -82px;
+				}
+				.ico-rise {
+					background-position: 0 -12px;
+				}
+				.ico-drop {
+					background-position: 0 -47px;
+				}
+
+				// 更多
+				.btn-more {
+					width: 76px;
+					height: 24px;
+					margin-top: 25.5px;
+					margin-left: 18px;
+					color: #38bcff;
+					font-size: 14px;
+					line-height: 24px;
+					border: 1px solid #38bcff;
+					border-radius: 12px;
+				}
+			}
+		}
+		.table-tr:hover {
+			.table-td {
+				// 用户信息
+				figcaption {
+					width: 104px;
+				}
+				.user-name {
+					margin-top: 9px;
+				}
+				.user-id {
+					opacity: 1;
+				}
+
+				// 主播收入 / 粉丝总数
+				.user-income {
+					margin-top: 13px;
+				}
+				.user-total {
+					opacity: 1;
+				}
+			}			
+		}
+	}
+}

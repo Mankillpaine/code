@@ -1,0 +1,132 @@
+// 头部公共样式
+.public-header-sprite {
+    background-image: url(./../images/public-header-sprite.png);
+    background-repeat: no-repeat;
+}
+.public-header {
+    height: 60px;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    background: #2c2c2c;
+
+    // logo
+    .logo {
+        width: 124px;
+        height: 60px;
+        background: url(../images/logo.png) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    // 导航
+    .nav {
+        margin-left: 120px;
+
+        li {
+            height: 60px;
+        }
+        li.select {
+            position: relative;
+
+            a {
+                color: #38bbff;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                display: block;
+                width: 100%;
+                height: 2px;
+                background: #38bbff;
+            }
+        }
+
+        a {
+            padding: 0 33px;
+            color: #fff;
+            font-size: 18px;
+            line-height: 60px;
+        }
+    }
+
+    // 搜索框
+    .search {
+        width: 200px;
+        height: 26px;
+        margin-right: 5px;
+        margin-top: 15px;
+        border: 1px solid #5e5e5e;
+        border-radius: 18px;
+
+        // 选择组件
+        .ly-sel {
+            width: 54px;
+            color: #dfdfdf;
+            font-size: 14px;
+
+            // 选择按钮
+            .btn-sel {
+                width: 100%;
+                height: 26px;
+                text-align: left;
+                text-indent: 10px;
+                line-height: 26px;
+            }
+
+            // 小三角形
+            .ico {
+                top: 12px;
+                right: 4px;
+                border-top: 4px solid #5e5e5e;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                transition: transform 0.3s;
+                cursor: pointer;
+            }
+
+            // 选择列表
+            .sel-list {
+                display: none;
+                width: 44px;
+                top: 28px;
+                left: 5px;
+                z-index: 1;
+                background-position: 0 -23px;
+
+                li {
+                    width: 100%;
+                    height: 33px;
+                    line-height: 33px;
+                    background: #38bbff;
+
+                    &:hover {
+                        color: white;
+                        cursor: pointer;
+                    }
+                    &:first-child {
+                        margin-top: 7px;
+                    }
+                }
+            }
+        }
+
+        input {
+            width: 100px;
+            margin-top: 6px;
+            margin-left: 8px;
+            font-size: 14px;
+            line-height: 1;
+            text-indent: 0;
+            background: transparent;
+        }
+
+        .btn-search {
+            width: 23px;
+            height: 23px;
+            margin-right: 5px;
+            margin-top: 2px;
+            background-position: 0 0;
+        }
+    }
+}

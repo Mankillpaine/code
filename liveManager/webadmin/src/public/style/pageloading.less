@@ -1,0 +1,58 @@
+// 页面加载样式
+#tem-pageloading {
+	// display: none;
+	position: fixed;
+	top: 60px;
+	left: 250px;
+	z-index: -1;
+	background: #f2f2f2;
+	background: #fff;
+	transition: all 1s;
+
+	.pageloading-cont {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -36px;
+		margin-top: -27px;
+		width: 72px;
+		height: 54px;
+	}
+	.pageloading-line {
+		width: 8px;
+		height: 100%;
+		margin-left: 8px;
+		background: #62e5bd;
+		border-radius: 8px;
+		transform-origin: bottom;
+		animation: pageloading-topDown .6s linear infinite alternate;
+		
+		&:nth-child(1) {
+			margin-left: 0;
+		}
+		&:nth-child(2) {
+			animation-delay: .15s;
+		}
+		&:nth-child(3) {
+			animation-delay: .3s;
+		}
+		&:nth-child(4) {
+			animation-delay: .45s;
+		}
+		&:nth-child(5) {
+			animation-delay: .6s;
+		}
+	}
+
+	// 动画
+	@keyframes pageloading-topDown {
+		0% {
+			transform: scale(1, 1);
+			background: #62e5bd;
+		}
+		100% {
+			transform: scale(1, 0.5);
+			background: #05bcd4;
+		}
+	}
+}

@@ -1,0 +1,117 @@
+// MY核心重置样式
+html, body, header, section, footer, h1, h2, h3, h4, h5, h6, hr,
+p, blockquote, dl, dt, dd, ul, ol, li, pre,
+form, fieldset, legend, button, input, textarea,
+th, td, figure{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+ol, ul {
+    list-style: none;
+}
+code, kbd, pre, samp {
+    font-family: couriernew, courier, monospace;
+}
+sup {
+    vertical-align: text-top;
+}
+sub {
+    vertical-align: text-bottom;
+}
+fieldset, img {
+    border: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+button, input, select, textarea {
+    font-size: 100%;
+    outline: 0;
+}
+h1, h2, h3, h4, h5, h6, b, strong, p, span, small, time, figcaption, dt, dd, em {
+    line-height: 1;
+}
+h1, h2, h3, h4, h5, h6, b, strong, small {
+    font-weight: normal;
+}
+small {
+    font-size: 0.9em;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+// MY表单样式设置
+.MY_form(@Bradius:4px, @Bwidth:1px, @Bstyle:solid, @Bcolor:black, @color:gray,
+		 @Hx:1px, @Hy:1px, @Hwidth:2px, @Hcolor:gray,
+		 @Buradius:8px, @Bubackground:white, @Bucolor:gray
+){
+    input {
+        text-indent: 1em;
+        border-radius: 0;
+        border: none;
+        color: @color;
+    }
+    input:hover {
+        box-shadow: none;
+    }
+    input[type="button"] {
+        background: @Bubackground;
+        border-radius: @Buradius;
+        color: @Bucolor;
+        text-indent: 0;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+// 超链接样式重置
+.MY_a(@color: #1e1e1e) {
+    a {
+        display: inline-block;
+        color: @color;
+        text-decoration: none;
+        border: none;
+        outline: 0;
+        -webkit-appearance: none; /*取消iphone自带样式*/
+        -webkit-text-size-adjust: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    a:link {
+        color: #1e1e1e;
+    }
+    a:visited {
+        color: #1e1e1e;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a:active {
+        color: #1e1e1e;
+    }
+}
+
+// MY html,body样式设置
+.MY_HTML_BODY() {
+    html, body {
+        box-sizing: content-box;
+        font: 12px/150% Verdana, Arial, SimSun, Microsoft Yahei;
+        color: #1e1e1e;
+        background-color: #fff;
+        cursor: default;
+    }
+}
+
+// 重置默认样式
+.MY_form();
+.MY_a();
+.MY_HTML_BODY();

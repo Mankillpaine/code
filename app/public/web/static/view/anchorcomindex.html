@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ch-zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>头部 - 主播综合指数总榜</title>
+    <link rel="stylesheet" href="web/static/css/common.css">
+    <link rel="stylesheet" href="web/static/css/anchorcomindex.css">
+</head>
+<body>
+    <!--公共头部 start-->
+    <header class="public-header">
+        <nav class="ly-1210 clearfix">
+            <h1 class="logo fl"><a class="inlie wh-100" href="#"></a></h1>
+            <ul class="nav fl">
+                <li class="fl db"><a href="#">首页</a></li>
+                <li class="fl db select"><a href="#">指数</a></li>
+                <li class="fl db"><a href="#">观察</a></li>
+                <li class="fl db"><a href="#">服务</a></li>
+            </ul>
+            <div class="search fr">
+                <div class="ly-sel rel fl">
+                    <span class="button btn-sel"></span>
+                    <span class="ico abs"></span>
+                    <ul class="sel-list public-header-sprite clearfix abs"></ul>
+                </div>
+                <input class="fl" type="text" placeholder="输入搜索内容">
+                <span class="button btn-search public-header-sprite fr"></span>
+            </div>
+        </nav>
+    </header>
+    <!--公共头部 end-->
+
+    <!-- 内容部分 start -->
+    <div class="anchorcomindex-main">
+        <div class="ly-1210 clearfix">
+            <!-- 左边导航块 start -->
+            <nav class="anchorcomindex-main-left fl">
+                <div class="industry-title big-title center">行业指数</div>
+                <ul class="industry-list">
+                    <li class="list-item center rel">
+                        <a class="link-wh-100" href="#">直播行业指数</a>
+                    </li>
+                    <li class="list-item center rel">
+                        <a class="link-wh-100" href="#">平台活跃指数</a>
+                    </li>
+                </ul>
+                <div class="anchor-title big-title center">主播指数</div>
+                <ul class="anchor-list">
+                    <li class="list-item center sel rel">
+                        <a class="link-wh-100" href="#">主播综合指数总榜</a>
+                    </li>
+                    <li class="list-item center rel">
+                        <a class="link-wh-100" href="#">单日主播热度榜</a>
+                    </li>
+                    <li class="list-item center rel">
+                        <a class="link-wh-100" href="#">单日主播收入榜</a>
+                    </li>
+                    <li class="list-item center rel">
+                        <a class="link-wh-100" href="#">单日主播粉丝榜</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 左边导航块 end -->
+
+            <!-- 右边内容块 start -->
+            <div class="anchorcomindex-main-right fr">
+                <div class="table">
+                    <div class="table-head clearfix rel">
+                        <h2 class="fl">主播综合指数总榜 TOP100</h2>
+                        <time class="fl">2016-11-2</time>
+                        <!-- 平台导航 start -->
+                        <ul class="list-nav fl hidden">
+                            <li class="list-item fl"><a class="link-wh-100 sel" href="#">全平台</a></li>
+                            <li class="list-item fl"><a class="link-wh-100" href="#">花椒直播</a></li>
+                            <li class="list-item fl"><a class="link-wh-100" href="#">一直播</a></li>
+                            <li class="list-item fl"><a class="link-wh-100" href="#">映客直播</a></li>
+                            <li class="list-item fl"><a class="link-wh-100" href="#">YY直播</a></li>
+                            <li class="list-item fl"><a class="link-wh-100" href="#">虎牙直播</a></li>
+                            <li class="list-item fl"><a class="link-wh-100" href="#">花椒直播</a></li>
+                            <li class="list-item fl"><a class="link-wh-100" href="#">花椒直播</a></li>
+                            <li class="list-item fl"><a class="link-wh-100" href="#">花椒直播</a></li>
+                            <li class="list-item fl"><a class="link-wh-100" href="#">花椒直播</a></li>
+                        </ul>
+                        <!-- 平台导航 end -->
+                        <span class="button btn-other hide fr">
+                            其他
+                            <span class="ico ico-triangle"></span>
+                        </span>
+                        <div class="search clearfix abs">
+                            <input class="fl" type="text" placeholder="请输入主播ID、主播昵称、直播平台等关键词进行搜索">
+                            <span class="button btn-search sprite fl">
+                                <span class="ico ico-search"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="table-thead">
+                        <div class="table-tr clearfix">
+                            <div class="table-th fl">排行</div>
+                            <div class="table-th fl">账号</div>
+                            <div class="table-th fl">平台</div>
+                            <div class="table-th fl">收入</div>
+                            <div class="table-th fl">粉丝</div>
+                            <div class="table-th fl">主播综合指数<span class="ico sprite rel">
+                                <div class="ly-alert hide abs">
+                                    <p>“主播综合指数”是根据主播的粉丝、收入、在线时长等数据结合专业算法得出的指数值，指数值越高排名越高。</p>
+                                </div>
+                                <div class="decorate hide sprite abs"></div>
+                            </span></div>
+                            <div class="table-th fl">更多</div>
+                        </div>
+                    </div>
+                    <div class="table-tbody">
+                        <!-- 循环表格 start -->
+                        <a class="table-tr db hidden clearfix" href="#">
+                            <div class="table-td fl">
+                                <span class="user-sort db">1</span>
+                            </div>
+                            <div class="table-td fl">
+                                <figure class="clearfix">
+                                    <img class="fl" src="images/timg.jpg" alt="社会你求解">
+                                    <figcaption class="fl">
+                                        <span class="user-name hidden fl">社会社会你球姐你球姐</span>
+                                        <span class="user-id hidden fl">ID:147346734673467346   7546751</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="user-terrace db">映客直播映客直播映客直播</span>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="user-income hidden center fl">+152473467346734668</span>
+                                <span class="user-total hidden center fl">总:4524524689452468945246894689</span>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="user-income hidden center fl">+152468</span>
+                                <span class="user-total hidden center fl">总:4524689</span>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="user-comprehensive hidden db">41412541254125412525</span>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="button btn-more fl">主播详情</span>
+                            </div>
+                        </a>
+                        <a class="table-tr db hidden clearfix" href="#">
+                            <div class="table-td fl">
+                                <span class="user-sort db">1</span>
+                            </div>
+                            <div class="table-td fl">
+                                <figure class="clearfix">
+                                    <img class="fl" src="images/timg.jpg" alt="社会你求解">
+                                    <figcaption class="fl">
+                                        <span class="user-name hidden fl">社会社会你球姐你球姐</span>
+                                        <span class="user-id hidden fl">ID:147346734673467346   7546751</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="user-terrace db">映客直播映客直播映客直播</span>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="user-income hidden center fl">+152473467346734668</span>
+                                <span class="user-total hidden center fl">总:4524524689452468945246894689</span>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="user-income hidden center fl">+152468</span>
+                                <span class="user-total hidden center fl">总:4524689</span>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="user-comprehensive hidden db">41412541254125412525</span>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="button btn-more fl">主播详情</span>
+                            </div>
+                        </a>
+                        <a class="table-tr db hidden clearfix" href="#">
+                            <div class="table-td fl">
+                                <span class="user-sort db">1</span>
+                            </div>
+                            <div class="table-td fl">
+                                <figure class="clearfix">
+                                    <img class="fl" src="images/timg.jpg" alt="社会你求解">
+                                    <figcaption class="fl">
+                                        <span class="user-name hidden fl">社会社会你球姐你球姐</span>
+                                        <span class="user-id hidden fl">ID:147346734673467346   7546751</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="user-terrace db">映客直播映客直播映客直播</span>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="user-income hidden center fl">+152473467346734668</span>
+                                <span class="user-total hidden center fl">总:4524524689452468945246894689</span>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="user-income hidden center fl">+152468</span>
+                                <span class="user-total hidden center fl">总:4524689</span>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="user-comprehensive hidden db">41412541254125412525</span>
+                            </div>
+                            <div class="table-td fl">
+                                <span class="button btn-more fl">主播详情</span>
+                            </div>
+                        </a>
+                        <!-- 循环表格 end -->
+                    </div>
+                </div>
+            </div>
+            <!-- 右边内容块 end -->
+        </div>
+    </div>
+    <!-- 内容部分 end -->
+
+    <!--公共底部 start-->
+    <footer class="public-footer">
+        <div class="ly-1210">
+            <div class="ly-left fl">
+                <a class="logo public-footer-sprite db th" href="#">底部logo</a>
+                <ul>
+                    <li class="public-footer-sprite">zhuyong@itoubu.com</li>
+                    <li class="public-footer-sprite">18627591100</li>
+                    <li class="public-footer-sprite">湘ICP备16010588号-1</li>
+                </ul>
+            </div>
+            <figure class="ly-right fl clearfix">
+                <img class="fl" src="images/timg.jpg" alt="扫描关注头部微信公众平台">
+                <figcaption class="fl center">扫描关注头部微信公众平台</figcaption>
+            </figure>
+        </div>
+    </footer>
+    <!--公共底部 end-->
+
+<script src="web/static/js/common.bundle.js"></script>
+<script src="web/static/js/anchorcomindex.bundle.js"></script>
+</body>
+</html>

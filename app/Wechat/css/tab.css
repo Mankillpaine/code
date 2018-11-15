@@ -1,0 +1,157 @@
+
+a {
+text-decoration: none;
+}
+.bigone{
+/*width:311px;height:169px;border:1px solid #aaa;overflow:hidden;*/
+}
+.bigone .imgs{
+width:311px;height:169px;overflow:hidden;
+}
+.bigone .imgs .imgs1{
+width:77px;height:84px;border-bottom:1px solid #aaa;border-right:1px solid #aaa;
+float:left;
+}
+.bigone .close{
+position:absolute;font-size:40px;top:25px;right:10px;cursor:pointer;
+}
+
+.bigone .titleone{
+width:100%;height:0.80rem;background-color: #f6fbfd;
+border-bottom: 1px solid #F3F3F3;
+    float: left;
+}
+
+.bigone .titleone a{
+font-size:0.32rem;line-height:0.8rem;float:left;
+    width:50%;
+    height:0.8rem;text-align:center;
+color:#58607c;
+}
+.bigone .titleone .last{
+border:0;
+}
+.bigone .titleone a:hover {
+/*color:#51a5fe;*/
+    font-size: 0.32rem;
+    /*border-bottom: 1px solid #51a5fe;*/
+}
+.titleone a:active{
+    color:#51a5fe;
+    font-size: 0.32rem;
+  
+}
+.bigone .con{
+width:100%;
+float: left;
+height:auto;
+}
+.bigone .con .list1{
+width:100%;
+float: left;
+}
+.bigone .con .list1 .list1-con{
+width:100%;
+/*height:125px;
+margin-top:10px;
+margin-left:10px;*/
+}
+.bigone .con .list1 .list1-con .zi{
+text-align:right;
+}
+.bigone .con .list1 .list1-con .two input{
+border:0;background:red;color:#fff;cursor:pointer;
+}
+.bigone .con .list1 .list1-con .two span{
+color:#005EA7;
+}
+.bigone .con .list1 .list1-con .two span:hover{
+text-decoration:underline;
+}
+.bigone .con .list2{
+width:100%;display:none;
+}
+.bigone .con .list2-title{
+width:100%;
+    height:0.8rem;
+    border-bottom:1px solid #e6e6e6;
+    float: left;
+}
+.bigone .con .list2-title a{
+color:#8389a1;
+float:left;
+width:25%;
+line-height:30px;
+font-size:0.26rem;
+text-align: center;
+/*margin-left:10px;*/
+}
+.bigone .con .list2-title a:hover{
+/*text-decoration:underline;color:red;*/
+    font-size: 0.26rem;
+    color: #51a5fe;
+}
+.bigone .con .list2-con{
+width:100%;
+/*height:105px;*/
+overflow:hidden;
+}
+.bigone .con .list2-con .list2-list{
+width:100%;height:100%;
+}
+.bigone .con .list3{
+width:100%;height:135px;display:none;
+}
+.bigone .con .list3 .list3-left{
+width:70px;height:70px;background:url(20111221D.png) no-repeat 0 0;margin-top:25px;
+float:left;margin-right:10px;
+}
+.bigone .con .list3 .list3-right{
+width:230px;height:135px;float:left;line-height:36px;
+}
+.bigone .con .list4{
+width:100%;height:135px;display:none;
+}
+.bigone .con .list4 .list4-title{
+height:30px;width:100%;
+}
+.bigone .con .list4 .list4-title a{
+color:#005EAB;float:left;width:40px;line-height:30px;font-size:14px;margin-left:10px;
+}
+.bigone .con .list4 .list4-title span{
+font-size:14px;float:left;line-height:30px;
+}
+.bigone .con .list4-con{
+height:107px;width:300px;margin-left:10px;overflow:hidden;
+}
+.bigone .con .list4-con .list4-list{
+height:107px;width:300px;
+}
+.list2-title a{
+white-space:nowrap;text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow: hidden;
+}
+
+
+.list1-title a{
+white-space:nowrap;text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow: hidden;float: left;
+}
+ .list1-title{
+width:100%;
+    height:0.8rem;
+    border-bottom:1px solid #F3F3F3;
+    float: left;
+}
+ .list1-title a{
+color:#8389a1;
+float:left;
+width:50%;
+line-height:0.85rem;
+font-size:0.26rem;
+text-align: center;
+/*margin-left:10px;*/
+}
+ .list1-title a:hover{
+/*text-decoration:underline;color:red;*/
+    font-size: 0.26rem;
+    color: #51a5fe;
+}
